@@ -1,0 +1,22 @@
+package Game;
+import info.gridworld.grid.Location;
+
+import java.util.ArrayList;
+import info.gridworld.actor.Actor;
+import info.gridworld.actor.Flower;
+import info.gridworld.actor.Rock;
+import info.gridworld.grid.Grid;
+
+public class IceRain1 extends Actor
+{
+	public void act()
+	{
+		Grid<Actor> gr = getGrid();
+		Location loc = getLocation();
+		IceRain2 IceRain2= new IceRain2();
+		//IceRain2.setColor(null);
+		IceRain2.putSelfInGrid(gr,loc);
+		
+	}
+	
+}
